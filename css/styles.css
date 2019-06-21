@@ -29,6 +29,11 @@ div.jumbotron {
   margin: 0 auto;
 }
 
+/* card animations */
+#card-hockey:hover {
+  
+}
+
 /* footer */
 footer {
   width: 100%;
