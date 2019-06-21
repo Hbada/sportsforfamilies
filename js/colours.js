@@ -6,8 +6,19 @@ document.querySelectorAll("h5").forEach(function(el) {
 
 // load photos when hovering over cards
 
-var hockeyImg = document.createElement("img");
-elem.setAttribute("src", "images/hockey.png");
-elem.setAttribute("width", "1024");
-elem.setAttribute("alt", "illustrated hockey stick");
-document.getElementById("card-hockey").appendChild("hockeyImg");
+// create hockey image variable
+//var hockeyImg = document.createElement("img");
+//hockeyImg.setAttribute("src", "images/hockey.png");
+//hockeyImg.setAttribute("width", "1024");
+//hockeyImg.setAttribute("alt", "illustrated hockey stick");
+
+// on hover, insert the photo
+
+const hockeyCard = document.querySelector('#card-hockey');
+hockeyCard.onmouseover = hockeyMouseOver;
+
+function hockeyMouseOver() {
+  document.getElementById("image-pane").appendChild(<img src="./images/hockey.png" />);
+};
+
+// document.getElementById("image-pane").appendChild("hockeyImg");
